@@ -18,3 +18,14 @@ const observer = new IntersectionObserver((entries) => {
 
 const hiddentElements = document.querySelectorAll('.hidden');
 hiddentElements.forEach((el) => observer.observe(el));
+
+const observerBlur = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+      if(entry.isIntersecting) {
+        entry.target.classList.add('showBlur')
+      }
+  });
+});
+
+const hiddenBlurElements = document.querySelectorAll('.hiddenBlur');
+hiddenBlurElements.forEach((el) => observerBlur.observe(el));

@@ -3,13 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WM Robotics</title>
+    <title>17774 - William Monroe Robotics</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald|Josefin+Sans">
     <script src="home.js" defer></script>
     <link rel="stylesheet" href="main.css">
+    <link rel="icon" type="image/x-icon" href="media/logo.ico">
 </head>
 <body>
-    
+    <div id="navbar">
+        <div id="home">Home</div>
+        <div id="team">Our Team</div>
+        <div id="robot">Our Robot</div>
+        <div id="sponsors">Our Sponsors</div>
+    </div>
     <section>
         <div class="mainHeader">
             <video id="headerVideo" autoplay muted loop>
@@ -36,12 +42,6 @@
             </div>
         </div>
     </section>
-    <div id="navbar">
-        <div id="home">Home</div>
-        <div id="team">Our Team</div>
-        <div id="robot">Our Robot</div>
-        <div id="sponsors">Our Sponsors</div>
-    </div>
     <section>
         <div class="sponsors">
             <div class="header">
@@ -51,22 +51,34 @@
                 <div id="card1" class="card hidden">
                     <img src="media/pepsi-logo.png">
                     <h3>Pepsi</h3>
-                     <!--<p>Insert ad here. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>-->
                 </div>
                 <div id="card2" class="card hidden">
                     <img src="media/rev-logo.png">
                     <h3>Rev Robotics</h3>
                 </div>
                 <div id="card3" class="card hidden">
+                    <img src="media/dummy-logo.png">
                     <h3>Title Here</h3>
                 </div>
                 <div id="card4" class="card hidden">
+                    <img src="media/dummy-logo.png">
                     <h3>Title Here</h3>
                 </div>
             </div>
         
         </div>
         
+    </section>
+    <section>
+        <div id="ourRobot">
+            <video id="robotVideo" autoplay muted loop class="sectionVideo">
+                <source src="media/headerVideo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="blurDiv hiddenBlur"></div>
+            
+            <h2>The <span>Monroe</span>Bot<h2>
+        </div>
     </section>
     
 </body>
