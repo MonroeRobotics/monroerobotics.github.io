@@ -162,21 +162,22 @@ body::-webkit-scrollbar {
 }
 
 #sponsorBox > div {
-    width: 30%;
-    height: 40vh;
+    width: 20%;
     display: flex;
     align-items: center;
     flex-direction: column;
     border-radius: 10px;
     padding-top: 1%;
-    margin: 0 10% 10%;
+    font-size: 3vw;
+    margin: 0 2% 2%;
     background-color: #40444b;
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #sponsorBox > div > img {
-    width: 30%;
+    width: 80%;
+    border-radius: 30px;
 }
 
 .card:nth-child(1){
@@ -188,11 +189,11 @@ body::-webkit-scrollbar {
 }
 
 .card:nth-child(3){
-    transition-delay: 0ms;
+    transition-delay: 600ms;
 }
 
 .card:nth-child(4){
-    transition-delay: 300ms;
+    transition-delay: 900ms;
 }
 
 .hidden{
@@ -203,7 +204,7 @@ body::-webkit-scrollbar {
 }
 
 .show{
-    transition: all 1s;
+    transition: opacity 1s, filter 1s, transform 1s;
     filter: blur(0px);
     opacity: 1;
     transform: translateX(0);
@@ -215,5 +216,9 @@ body::-webkit-scrollbar {
         align-items: center;
         flex-wrap: nowrap;
         flex-direction: column;
+    }
+
+    #sponsorBox > div {
+        width: 80%;
     }
 }
