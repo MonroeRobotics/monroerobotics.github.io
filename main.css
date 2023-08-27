@@ -247,11 +247,11 @@ body::-webkit-scrollbar {
 
 .hiddenBlur{
     transition: transform 1s;
-    transform: translateY(-400px) translateX(0) rotate(20deg);
+    transform: translateY(-50vw) translateX(0) rotate(20deg);
 }
 
 .showBlur{
-    transform: translateY(-400px) translateX(-50%) rotate(20deg);
+    transform: translateY(-50vw) translateX(-50%) rotate(20deg);
 }
 
 .blurDiv {
