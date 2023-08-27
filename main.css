@@ -213,13 +213,11 @@ body::-webkit-scrollbar {
 
 #ourRobot {
     width: 100vw;
+    height: 100vh;
     position: relative;
     overflow: hidden;
-    text-align: center;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 500px;
+    flex-direction: column;
 }
 
 .sectionVideo {
@@ -234,24 +232,38 @@ body::-webkit-scrollbar {
 }
 
 #ourRobot > h2 {
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-    overflow: hidden;
-    text-align: center;
+    transition-delay: 400ms;
+    width: 60%;
+    margin-left: 5%;
+    display: block;
+    position: static;
+    text-align: left;
+    z-index: 1;
 }
 
 #ourRobot > h2 > span {
     color: var(--green);
 }
 
+#ourRobot > p {
+    transition-delay: 800ms;
+    width: 40%;
+    width: 40%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    display: block;
+    position: relative;
+    text-align: left;
+    z-index: 1;
+}
+
 .hiddenBlur{
     transition: transform 1s;
-    transform: translateY(-50vw) translateX(0) rotate(20deg);
+    transform: translateY(-50vw) translateX(-20%) rotate(20deg);
 }
 
 .showBlur{
-    transform: translateY(-50vw) translateX(-50%) rotate(20deg);
+    transform: translateY(-50vw) translateX(-75%) rotate(20deg);
 }
 
 .blurDiv {
@@ -261,11 +273,17 @@ body::-webkit-scrollbar {
     top: 0;
     bottom: 0;
     height: 250%;
-    width: 150%;
+    width: 200%;
     z-index: 0;
 }
 
-@media (max-width: 700px) {
+#footer {
+    width: 100vw;
+    height: 20vh;
+    background-color: #40444b;
+}
+
+@media (max-width: 500px) {
     #sponsorBox {
         display: flex;
         align-items: center;
