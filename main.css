@@ -1,4 +1,7 @@
 :root{
+    --navHeight: 7%;
+    --navHeightUp: -7%;
+
     --green: rgb(25, 140, 25);
     --limegreen: rgb(50, 153, 50);
     --white: rgb(255, 255, 255);
@@ -42,33 +45,64 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+.accent {
+    color: var(--green);
+}
+
 #navbar {
     display: flex;
     position: fixed;
-    top: -100px;
+    top: var(--navHeightUp);
     box-shadow: 0px 10px 5px rgb(0, 0, 0, 0.2);
-    justify-content: center;
     width: 100vw;
-    align-items: center;
+    height: var(--navHeight);
     background-color: rgb(17, 17, 17, 0.95);
     transition: top 0.3s;
     z-index: 1000;
     
 }
 
-#navbar > div {
+.navButton {
     color: white;
     border-radius: 10px;
     font-family: 'Josefin Sans';
+    font-size: 1.5vw;
     display: inline-block;
     margin: 1% 3% 1%;
-    padding: 2vh;
+    height: 100%;
     transition-duration: 500ms;
 }
 
-#navbar > div:hover{
+.navButton:hover{
     background-color: rgb(255, 255, 255, 0.1);
     cursor: pointer;
+}
+
+.navButton > p  {
+    width: 100%;
+    height: 100%;
+}
+
+#navButtons  {
+    display: flex;
+    align-content: right;
+    width: 50%;
+    height: 100%;
+}
+
+#brandNav {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width:50%;
+}
+
+#brandNav > img{
+    height: 100%;
+    width: 50%;
+    object-fit: cover;
 }
 
 .mainHeader {
@@ -168,7 +202,7 @@ body::-webkit-scrollbar {
     flex-direction: column;
     justify-content: center;
     border-radius: 10px;
-    padding-top: 1%;
+    padding-top: 2%;
     font-size: 2.5vw;
     margin: 1% 5% 3%;
     background-color: #40444b;
@@ -214,11 +248,11 @@ body::-webkit-scrollbar {
 
 #ourRobot {
     width: 100vw;
-    height: 80vh;
     position: relative;
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    padding-bottom: 5vh;
 }
 
 .sectionVideo {
@@ -233,7 +267,7 @@ body::-webkit-scrollbar {
 }
 
 #ourRobot > h2 {
-    transition-delay: 400ms;
+    transition-delay: 100ms;
     width: 60%;
     margin-left: 5%;
     margin-bottom: 0%;
@@ -249,9 +283,8 @@ body::-webkit-scrollbar {
 }
 
 #ourRobot > p {
-    transition-delay: 800ms;
+    transition-delay: 100ms;
     width: 40%;
-    height: 35%;
     font-size: 3vh;
     margin-left: 5%;
     display: block;
@@ -261,7 +294,7 @@ body::-webkit-scrollbar {
 }
 
 .robotButton {
-    transition-delay: 1000ms;
+    transition-delay: 100ms;
     position: relative;
     width: 20%;
     margin-left: 5%;
@@ -370,5 +403,11 @@ button {
     .card:nth-child(4){
         transition-delay: 300ms;
     }
+
+    #ourRobot > p {
+        display: none;
+    }
+
+    
 
 }
