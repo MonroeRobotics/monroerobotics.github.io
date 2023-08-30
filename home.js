@@ -29,3 +29,25 @@ const observerBlur = new IntersectionObserver((entries) => {
 
 const hiddenBlurElements = document.querySelectorAll('.hiddenBlur');
 hiddenBlurElements.forEach((el) => observerBlur.observe(el));
+
+const observerBlurRight = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+      if(entry.isIntersecting) {
+        entry.target.classList.add('showBlurRight')
+      }
+  });
+});
+
+const hiddenBlurRightElements = document.querySelectorAll('.hiddenBlurRight');
+hiddenBlurRightElements.forEach((el) => observerBlurRight.observe(el));
+
+const observerRight = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+      if(entry.isIntersecting) {
+        entry.target.classList.add('showRight')
+      }
+  });
+});
+
+const hiddenRightElements = document.querySelectorAll('.hiddenRight');
+hiddenRightElements.forEach((el) => observerRight.observe(el));
