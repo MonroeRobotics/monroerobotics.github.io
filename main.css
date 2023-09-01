@@ -104,12 +104,18 @@ body::-webkit-scrollbar {
 }
 
 #navButton{
+    text-decoration: none;
     text-align: center;
     padding: 2%;
     font-size: 1vw;
     border-radius: 10%;
     transition: background-color 0.3s;
     cursor: pointer;
+}
+
+#navButton:visited{
+    text-decoration: none;
+    color:white;
 }
 
 #navButton:hover{
@@ -345,12 +351,12 @@ body::-webkit-scrollbar {
 
 .hiddenBlurRight{
     transition: transform 1s;
-    transform: translateY(80vw) translateX(-20%) rotate(20deg);
+    transform: translateY(-10%) translateX(20%) rotate(20deg);
 }
 
 .showBlurRight{
     transition: transform 1s;
-    transform: translateY(85vw) translateX(75%) rotate(20deg);
+    transform: translateY(0vw) translateX(65%) rotate(20deg);
 }
 
 .blurDiv {
@@ -394,9 +400,6 @@ body::-webkit-scrollbar {
     width: 60%;
     flex-direction: column;
     align-content: flex-end;
-    box-shadow: 15px 5px 10px rgba(0,0,0,.2);
-    backdrop-filter: blur(10px);
-    background-color: rgb(0, 0, 0, .2);
 }
 
 #teamContent > p {
