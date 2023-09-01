@@ -1,9 +1,21 @@
-window.onscroll = function() {scrollFunction()};
+let mousePos = { x: undefined, y: undefined };
 
-function scrollFunction() {
+window.addEventListener('mousemove', (event) => {
+  mousePos = { x: event.clientX, y: event.clientY };
+  console.log(mousePos.x);
+  checkForNav();
+});
+
+window.onscroll = function() {checkForNav()};
+
+function checkForNav() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     document.getElementById("navbar").style.top = "0";
-  } else {
+  } 
+  else if (mousePos.y <= 60){
+    document.getElementById("navbar").style.top = "0";
+  }
+  else {
     document.getElementById("navbar").style.top = "var(--navHeightUp)";
   }
 } 
