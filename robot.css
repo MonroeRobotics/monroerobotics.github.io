@@ -1,0 +1,39 @@
+section {
+    overflow: hidden;
+}
+
+.robotContent{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    overflow: hidden;
+    transition: all 1s;
+    transform: translateY(0%);
+    opacity: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.robotContent[data-state="hidden"] {
+    opacity: 0%;
+    height: 0%;
+    transform: translateY(-30%);
+    position: absolute;
+}
+
+.robotHeader {
+    z-index: 1;
+    width: 100%;
+    padding: 3%;
+    text-align: left;
+    background-color: rgba(0,0,0,.8);
+}
+
+.robotIntro > img {
+    width: 80%;
+}
+
+.linkCard > img{
+    width: 80%;
+}
+

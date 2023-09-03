@@ -2,7 +2,6 @@ let mousePos = { x: undefined, y: undefined };
 
 window.addEventListener('mousemove', (event) => {
   mousePos = { x: event.clientX, y: event.clientY };
-  console.log(mousePos.x);
   checkForNav();
 });
 

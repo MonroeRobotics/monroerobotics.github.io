@@ -1,0 +1,74 @@
+#memberCards {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.teamMember {
+    transition: transform 0.5s;
+    width:40vh;
+    height: 55vh;
+    margin: 5% 1% 0;
+    background-color: transparent;
+    perspective: 1000px;
+}
+
+.cardInner{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    
+}
+
+.cardFront, .cardBack {
+    border-radius: var(--border-radius); 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    box-shadow: 0px 9px 30px 0px rgba(0, 0, 0, 0.336);
+}
+
+.cardFront {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(54, 53, 53);
+}
+
+.cardBack {
+    background-color: rgb(54, 53, 53);
+    transform: rotateY(180deg);
+}
+
+.cardBack > img {
+    object-fit: fill;
+    overflow: hidden;
+}
+
+.cardFront > img {
+    border-radius: var(--border-radius) var(--border-radius) 0px 0px; 
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+}
+
+.cardFront > h3 {
+    font-size: 200%;
+    margin-bottom: 0%;
+    margin-top: 6%;
+}
+
+.cardFront > p {
+    font-size: 150%;
+    margin-top: 1%;
+}
+
+.teamMember[data-card="front"]:hover {
+    transform: rotateY(-20deg);
+}
