@@ -27,9 +27,13 @@ body::-webkit-scrollbar {
     color: var(--green);
 }
 
+a {
+    color: white;
+}
+
 
 /* Nav Bar Content */
-#navbar {
+nav {
     display: flex;
     position: fixed;
     overflow: hidden;

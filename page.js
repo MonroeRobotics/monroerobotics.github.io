@@ -9,13 +9,13 @@ window.onscroll = function() {checkForNav()};
 
 function checkForNav() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("navbar").style.top = "0";
+    document.getElementById("nav").style.top = "0";
   } 
   else if (mousePos.y <= 60){
-    document.getElementById("navbar").style.top = "0";
+    document.getElementById("nav").style.top = "0";
   }
   else {
-    document.getElementById("navbar").style.top = "var(--navHeightUp)";
+    document.getElementById("nav").style.top = "var(--navHeightUp)";
   }
 } 
 
