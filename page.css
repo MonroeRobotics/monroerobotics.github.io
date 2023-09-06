@@ -6,6 +6,34 @@
     --green: rgb(25, 140, 25);
     --limegreen: rgb(50, 153, 50);
     --white: rgb(255, 255, 255);
+
+    --chocolate: rgb(128, 74, 0);
+    --goldenBrown: rgb(137, 94, 26);
+    --sunBurst: rgb(156, 122, 60);
+    --deer: rgb(176, 141, 87);
+}
+
+@keyframes background-pan {
+    from {
+        background-position: 0% center;
+    }
+
+    to {
+        background-position: -200% center;
+    }
+}
+
+@keyframes text-movement{
+    0% {
+        transform: translateY(0vh);
+    }
+
+    50% {
+        transform: translateY(2vh);
+    }
+    75% {
+        transform: translateY(0vh);
+    }
 }
 
 body {
@@ -31,6 +59,36 @@ a {
     color: white;
 }
 
+.bronzeGradient {
+    background: linear-gradient(
+        to right,
+        var(--chocolate),
+        var(--goldenBrown),
+        var(--sunBurst),
+        var(--deer),
+        var(--chocolate)
+    );
+}
+
+.greenGradient {
+    background: linear-gradient(
+        to right,
+        var(--green),
+        var(--limegreen),
+        var(--white),
+        var(--green)
+    );
+}
+
+.magic {
+    animation: background-pan 3s linear infinite;
+    font-style: normal;
+    
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 /* Nav Bar Content */
 nav {

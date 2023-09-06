@@ -1,0 +1,56 @@
+.tier {
+    padding-bottom: 30px;
+    
+}
+
+.tier > h3 {
+    font-size: 2vw;
+    width: 100%;
+    text-align: center;
+}
+
+.magicBronze {
+    animation: background-pan 3s linear infinite;
+    font-style: normal;
+    background: linear-gradient(
+        to right,
+        var(--green),
+        var(--limegreen),
+        var(--white),
+        var(--green)
+    );
+    background-size: 150%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.tier > div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.sponsorCard{
+    width: 15%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    padding-top: 2%;
+    font-size: 2vw;
+    margin: 1% 5% 3%;
+    background-color: #40444b;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.sponsorCard > img {
+    width: 80%;
+    margin-top: 1%;
+    border-radius: 30px;
+}
