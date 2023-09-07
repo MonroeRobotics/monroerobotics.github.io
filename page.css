@@ -59,6 +59,21 @@ a {
     color: white;
 }
 
+/* 
+Colors Below Sourced From 
+https://www.schemecolor.com
+*/
+
+.greenGradient {
+    background: linear-gradient(
+        to right,
+        var(--green),
+        var(--limegreen),
+        var(--white),
+        var(--green)
+    );
+}
+
 .bronzeGradient {
     background: linear-gradient(
         to right,
@@ -70,13 +85,16 @@ a {
     );
 }
 
-.greenGradient {
+.silverGradient {
     background: linear-gradient(
         to right,
-        var(--green),
-        var(--limegreen),
-        var(--white),
-        var(--green)
+        #70706F,
+        #7D7D7A,
+        #8E8D8D,
+        #A1A2A3,
+        #B3B6B5,
+        #BEC0C2,
+        #70706F
     );
 }
 
