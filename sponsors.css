@@ -23,27 +23,30 @@
     justify-content: center;
 }
 
-
-
 .sponsorCard{
-    width: 15%;
+    width: 15vw;
+    height: 10vw;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
     border-radius: 10px;
-    padding-top: 2%;
+    padding: 2%;
     font-size: 2vw;
-    margin: 1% 5% 3%;
+    margin: 2%;
     background-color: #40444b;
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .sponsorCard > img {
-    width: 80%;
-    margin-top: 1%;
+    width: 100%;
     border-radius: 30px;
+}
+
+#silver .sponsorCard{
+    width: 20vw;
+    height: 15vw;
 }
 
 #personalSponsors {
@@ -65,4 +68,9 @@
 
 #personalSponsors > div > p {
     font-size: 30px;
+}
+
+#howToSponsor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
