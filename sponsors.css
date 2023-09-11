@@ -1,0 +1,78 @@
+#sponsorIntro > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5%;
+    margin-right: 5%;
+    padding: 5%;
+    width: 80%;
+    height: 30vh;
+    font-size: 3vw;
+    background-color: rgb(31, 31, 31);
+    box-shadow: 0px -5px 20px rgba(85, 85, 85, 0.5);
+}
+
+.tier > h3 {
+    font-size: 3vw;
+    width: 100%;
+    text-align: center;
+}
+
+.tier > div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.sponsorCard{
+    width: 15vw;
+    height: 10vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 2%;
+    font-size: 2vw;
+    margin: 2%;
+    background-color: #40444b;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.sponsorCard > img {
+    width: 100%;
+    border-radius: 30px;
+}
+
+#silver .sponsorCard{
+    width: 20vw;
+    height: 15vw;
+}
+
+#personalSponsors {
+    margin: 3%;
+    padding: 1%;
+    border-radius: 2%;
+    background-color: rgb(31, 31, 31);
+    box-shadow: 0px -5px 20px rgba(85, 85, 85, 0.5);
+}
+
+#personalSponsors > div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 5%;
+    gap: 5%;
+    justify-content: center;
+}
+
+#personalSponsors > div > p {
+    font-size: 30px;
+}
+
+#howToSponsor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}

@@ -1,0 +1,277 @@
+:root{
+    --navHeight: 7%;
+    --navHeightUp: -7%;
+    --border-radius: 10%;
+
+    --green: rgb(25, 140, 25);
+    --limegreen: rgb(50, 153, 50);
+    --white: rgb(255, 255, 255);
+
+    --chocolate: rgb(128, 74, 0);
+    --goldenBrown: rgb(137, 94, 26);
+    --sunBurst: rgb(156, 122, 60);
+    --deer: rgb(176, 141, 87);
+}
+
+@keyframes background-pan {
+    from {
+        background-position: 0% center;
+    }
+
+    to {
+        background-position: -200% center;
+    }
+}
+
+@keyframes text-movement{
+    0% {
+        transform: translateY(0vh);
+    }
+
+    50% {
+        transform: translateY(2vh);
+    }
+    75% {
+        transform: translateY(0vh);
+    }
+}
+
+body {
+    background-color: rgb(41, 40, 40);
+    font-family: Oswald, sans-serif;
+    color: white;
+    z-index: 1;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    margin: 0;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.accent {
+    color: var(--green);
+}
+
+a {
+    color: white;
+}
+
+/* 
+Colors Below Sourced From 
+https://www.schemecolor.com
+*/
+
+.greenGradient {
+    background: linear-gradient(
+        to right,
+        var(--green),
+        var(--limegreen),
+        var(--white),
+        var(--green)
+    );
+}
+
+.bronzeGradient {
+    background: linear-gradient(
+        to right,
+        var(--chocolate),
+        var(--goldenBrown),
+        var(--sunBurst),
+        var(--deer),
+        var(--chocolate)
+    );
+}
+
+.silverGradient {
+    background: linear-gradient(
+        to right,
+        #70706F,
+        #7D7D7A,
+        #8E8D8D,
+        #A1A2A3,
+        #B3B6B5,
+        #BEC0C2,
+        #70706F
+    );
+}
+
+.magic {
+    animation: background-pan 3s linear infinite;
+    font-style: normal;
+    
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Nav Bar Content */
+nav {
+    display: flex;
+    position: fixed;
+    overflow: hidden;
+    top: var(--navHeightUp);
+    box-shadow: 0px 10px 5px rgb(0, 0, 0, 0.2);
+    width: 100vw;
+    height: var(--navHeight);
+    background-color: rgb(17, 17, 17, 0.95);
+    transition: top 0.3s;
+    z-index: 1000;
+    
+}
+
+
+#brandNav {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 60%;
+}
+
+#brandNav > img{
+    width: 40%;
+    object-fit: cover;
+}
+#brandText{
+    display: flex;
+    flex-direction: column;
+    }
+
+#brandText > h1{
+    height: 70%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#brandText > h2{
+    height: 30%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+#navButtons{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+#navButton{
+    text-decoration: none;
+    text-align: center;
+    padding: 2%;
+    font-size: 1vw;
+    border-radius: 10%;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+#navButton:visited{
+    text-decoration: none;
+    color:white;
+}
+
+#navButton:hover{
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.pageHeader {
+    z-index: -2;
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background: #1f4037;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #99f2c8, #1f4037);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #99f2c8, #1f4037); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+.pageHeader > div {
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+    background-color: rgba(0, 0, 0 ,0.6);
+}
+
+.pageHeader > div > h1 {
+    font-size: 6vw;
+    margin: 0;
+}
+
+.pageHeader > img {
+    width: 150%;
+    position: absolute;
+    object-fit: cover;
+    filter:blur(5px) brightness(75%);
+    z-index: -1;
+    transform: translateX(8%) translateY(15%);
+}
+
+.sectionHeader {
+    width: 100%;
+    text-align: center;
+    font-size: 4vw;
+    margin-bottom: 0;
+}
+
+
+.linkCard {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 40vw;
+    height: 40vw;
+    z-index: 1;
+}
+
+.linkCard > img {
+    transition-duration: 0.5s;
+    width: 120%;
+    border-radius: 1%;
+    position: absolute;
+    z-index: -1;
+}
+
+.linkCard > a {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+.linkCard > i{
+    transition-duration: 0.5s;
+    transform: scale(400%)translateX(-30%);
+    opacity: 0%;
+    z-index: 5;
+}
+
+.linkCard:hover > img {
+    filter: brightness(20%);
+}
+
+.linkCard:hover > i {
+    opacity: 100%;
+    transform: scale(400%) translateX(0);
+}

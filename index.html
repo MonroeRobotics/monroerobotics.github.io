@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>17774 - William Monroe Robotics</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald|Josefin+Sans">
+    <script src="page.js" defer></script>
+    <link rel="stylesheet" href="page.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="icon" type="image/x-icon" href="media/logo.ico">
+</head>
+<body>
+    <nav id="nav">
+        <div id="brandNav">
+            <img src="media/logo.png">
+            <div id="brandText">
+                <h1><span class="accent">Monroe </span>Robotics</h1>
+                <h2>-17774</h2>
+            </div>
+        </div>
+        <div id="navButtons">
+            <a id="navButton" href="index.html">Home</a>
+            <a id="navButton" href="ourTeam.html">Our Team</a>
+            <a id="navButton" href="ourRobot.html">Our Robot</a>
+            <a id="navButton" href="ourSponsors.html">Our Sponsors</a>
+        </div>
+    </nav>
+    <section>
+        <div class="mainHeader">
+            <video id="headerVideo" autoplay muted loop>
+                <source src="media/headerVideo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="overlayHeader">
+                <h1 id="head1">
+                    <span>W</span>
+                    <span>E</span>
+                    <span> </span>
+                    <span>A</span>
+                    <span>R</span>
+                    <span>E</span>
+                </h1>
+                <h1 id="head2" class="magic greenGradient">
+                    <span>M</span>
+                    <span>O</span>
+                    <span>N</span>
+                    <span>R</span>
+                    <span>O</span>
+                    <span>E</span>
+                </h1>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="sponsors">
+            <div class="header">
+                <h2>Sponsored By</h2>
+            </div>
+            <div id="sponsorBox" >
+                <div id="card1" class="card hidden">
+                    <img src="media/pepsi-logo.png">
+                    <h3>Pepsi</h3>
+                </div>
+                <div id="card2" class="card hidden">
+                    <img src="media/rev-logo.png">
+                    <h3>Rev Robotics</h3>
+                </div>
+                <div id="card3" class="card hidden">
+                    <img src="media/dummy-logo.png">
+                    <h3>Title Here</h3>
+                </div>
+                <div id="card4" class="card hidden">
+                    <img src="media/dummy-logo.png">
+                    <h3>Title Here</h3>
+                </div>
+            </div>
+        
+        </div>
+        
+    </section>
+    <section>
+        <div id="ourRobot">
+            <h2 class="hidden">The <span>Monroe</span>Bot</h2>
+            <p class="hidden">Because the game has junctions of different heights, we needed a way to move cones from the ground up to the highest junction. 
+                This mechanism needed to be quick and compact (to allow us to have a smaller drivetrain). 
+                The lift system ended up being the most iterated design because of the many reliability issues we faced with it.</p>
+            <div class="robotButton hidden">
+                <button style="--color:#ffffff;--slant:40px;--border:8px" onclick = "window.location.href='ourRobot.html';">Learn More</button>
+            </div>
+            <video id="robotVideo" autoplay muted loop class="sectionVideo">
+                <source src="media/headerVideo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="blurDiv hiddenBlur"></div>
+        </div>
+    </section>
+    <section>
+        <div id="ourTeam">
+            <div id="teamContent">
+                <h2 class="hiddenRight">Our <span class="accent">Team</span></h2>
+                <p class="hiddenRight">We are 17774 Monroe Robotics from William Monroe High School in Stanardsville, Virginia. 
+                    Being from one of the smallest counties in Virginia, the STEM field is not as widespread largely due to a lack of urban development, 
+                    however this also allows us greater opportunities to influence our county.
+                    We strive to explore and push the bounds of our team to help develop new skills and foster a passion for engineering and innovation.</p>
+                <div class="teamButton hiddenRight">
+                    <button style="--color:#ffffff;--slant:40px;--border:8px" onclick = "window.location.href='ourTeam.html';">Learn More</button>
+                </div>
+            </div>
+            <img class="sectionImage" src="media/teamMedals.JPG">
+            <div class="blurDiv hiddenBlurRight"></div>
+        </div>
+        
+    </section>
+    <section>
+        <div id="footer"></div>
+    </section>
+    
+</body>
+</html>
