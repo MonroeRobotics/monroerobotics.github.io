@@ -1,3 +1,17 @@
+#teamIntro > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5%;
+    margin-right: 5%;
+    padding: 5%;
+    width: 80%;
+    font-size: 2vw;
+    background-color: rgb(31, 31, 31);
+    box-shadow: 0px -5px 20px rgba(85, 85, 85, 0.5);
+}
+
 #memberCards {
     display: flex;
     position: relative;
@@ -8,8 +22,8 @@
 
 .teamMember {
     transition: transform 0.5s;
-    width:40vh;
-    height: 55vh;
+    width:  30vw;
+    height: 45vw;
     margin: 5% 1% 0;
     background-color: transparent;
     perspective: 1000px;
@@ -58,13 +72,13 @@
 }
 
 .cardFront > h3 {
-    font-size: 200%;
+    font-size: 3vw;
     margin-bottom: 0%;
     margin-top: 6%;
 }
 
 .cardFront > p {
-    font-size: 150%;
+    font-size: 2vw;
     margin-top: 1%;
 }
 
