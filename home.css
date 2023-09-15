@@ -163,7 +163,7 @@
     width: 60%;
     margin-left: 5%;
     margin-bottom: 0%;
-    font-size: 5vw;
+    font-size: 100px;
     display: block;
     position: static;
     text-align: left;
@@ -177,7 +177,7 @@
 #ourRobot > p {
     transition-delay: 100ms;
     width: 40%;
-    font-size: 3vh;
+    font-size: 30px;
     margin-left: 5%;
     display: block;
     position: relative;
@@ -217,7 +217,7 @@
 
 .showBlurRight{
     transition: transform 1s;
-    transform: translateY(0vw) translateX(65%) rotate(20deg);
+    transform: translateY(0vw) translateX(70%) rotate(20deg);
 }
 
 .blurDiv {
@@ -246,7 +246,7 @@
     width: 95%;
     margin-right: 5%;
     margin-bottom: 0%;
-    font-size: 5vw;
+    font-size: 100px;
     display: block;
     position: static;
     text-align: right;
@@ -259,7 +259,7 @@
 
 #teamContent {
     display: flex;
-    width: 60%;
+    width: 45%;
     flex-direction: column;
     align-content: flex-end;
 }
@@ -267,11 +267,11 @@
 #teamContent > p {
     transition-delay: 100ms;
     width: 95%;
-    font-size: 3vh;
+    font-size: 30px;
     margin-right: 5%;
     display: block;
     position: relative;
-    text-align: left;
+    text-align: right;
     z-index: 1;
 }
 .sectionImage {

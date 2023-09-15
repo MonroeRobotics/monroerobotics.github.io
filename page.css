@@ -1,6 +1,6 @@
 :root{
-    --navHeight: 7%;
-    --navHeightUp: -7%;
+    --navHeight: 8%;
+    --navHeightUp: -8%;
     --border-radius: 10%;
 
     --green: rgb(25, 140, 25);
@@ -143,7 +143,7 @@ nav {
     }
 
 #brandText > h1{
-    height: 70%;
+    font-size: 40px;
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -168,7 +168,7 @@ nav {
     text-decoration: none;
     text-align: center;
     padding: 2%;
-    font-size: 1vw;
+    font-size: 20px;
     border-radius: 10%;
     transition: background-color 0.3s;
     cursor: pointer;
@@ -213,7 +213,7 @@ nav {
 }
 
 .pageHeader > div > h1 {
-    font-size: 6vw;
+    font-size: 40px;
     margin: 0;
 }
 
