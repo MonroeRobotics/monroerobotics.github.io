@@ -1,30 +1,32 @@
 .mainHeader {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-content: center;
     height: 100vh;
     width: 100vw;
-}
-
-.overlayHeader {
     font-family: 'Josefin Sans', sans-serif;
     font-style: italic;
     color:rgb(255, 255, 255);
     background-color: rgb(128, 128, 128, 0);
     text-align: center;
-    margin: auto;
-    width: 60%;
-    border-radius: 50px;
-    font-size: 5vw;
     box-shadow: inset;
     transition-duration: transform 500ms;
     cursor: default;
-    display: inline-block;
 }
 
-.overlayHeader > h1 > span {
+.mainHeader > h1 > span {
     display: inline-block;
     margin: none;
     transition: transform 0.5s;
+}
+
+#head1 {
+    font-size: 80px;
+}
+
+#head2 {
+    font-size: 100px;
 }
 
 #head1 > span:hover {
@@ -32,14 +34,12 @@
     transform: translateY(-3vh);
     margin: none;
 }
-#head2 {
-    font-size: 8vw;
-}
+
 
 #headerVideo {
     height: 100%;
     width: 100%;
-    object-fit: fill;
+    object-fit: cover;
     position: absolute;
     top: 0;
     right: 0;
@@ -163,7 +163,7 @@
     width: 60%;
     margin-left: 5%;
     margin-bottom: 0%;
-    font-size: 5vw;
+    font-size: 100px;
     display: block;
     position: static;
     text-align: left;
@@ -177,7 +177,7 @@
 #ourRobot > p {
     transition-delay: 100ms;
     width: 40%;
-    font-size: 3vh;
+    font-size: 30px;
     margin-left: 5%;
     display: block;
     position: relative;
@@ -217,7 +217,7 @@
 
 .showBlurRight{
     transition: transform 1s;
-    transform: translateY(0vw) translateX(65%) rotate(20deg);
+    transform: translateY(0vw) translateX(70%) rotate(20deg);
 }
 
 .blurDiv {
@@ -246,7 +246,7 @@
     width: 95%;
     margin-right: 5%;
     margin-bottom: 0%;
-    font-size: 5vw;
+    font-size: 100px;
     display: block;
     position: static;
     text-align: right;
@@ -259,7 +259,7 @@
 
 #teamContent {
     display: flex;
-    width: 60%;
+    width: 45%;
     flex-direction: column;
     align-content: flex-end;
 }
@@ -267,11 +267,11 @@
 #teamContent > p {
     transition-delay: 100ms;
     width: 95%;
-    font-size: 3vh;
+    font-size: 30px;
     margin-right: 5%;
     display: block;
     position: relative;
-    text-align: left;
+    text-align: right;
     z-index: 1;
 }
 .sectionImage {
