@@ -1,6 +1,6 @@
 :root{
-    --navHeight: 8%;
-    --navHeightUp: -8%;
+    --navHeight: 100px;
+    --navHeightUp: -100px;
     --border-radius: 10%;
 
     --green: rgb(25, 140, 25);
@@ -213,7 +213,7 @@ nav {
 }
 
 .pageHeader > div > h1 {
-    font-size: 40px;
+    font-size: 100px;
     margin: 0;
 }
 
@@ -229,10 +229,9 @@ nav {
 .sectionHeader {
     width: 100%;
     text-align: center;
-    font-size: 4vw;
+    font-size: 60px;
     margin-bottom: 0;
 }
-
 
 .linkCard {
     position: relative;
@@ -240,8 +239,8 @@ nav {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    width: 40vw;
-    height: 40vw;
+    width: 500px;
+    height: 500px;
     z-index: 1;
 }
 
