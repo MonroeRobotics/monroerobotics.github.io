@@ -58,11 +58,13 @@
 }
 
 .cardBack {
+    display: flex;
+    justify-content: center;
     transform: rotateY(180deg);
 }
 
 .cardBack > img {
-    object-fit: cover; 
+    width: 150%; 
 }
 
 .cardFront > img {
