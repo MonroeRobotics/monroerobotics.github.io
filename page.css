@@ -1,6 +1,6 @@
 :root{
-    --navHeight: 8%;
-    --navHeightUp: -8%;
+    --navHeight: 100px;
+    --navHeightUp: -100px;
     --border-radius: 10%;
 
     --green: rgb(25, 140, 25);
