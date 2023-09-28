@@ -98,6 +98,18 @@ https://www.schemecolor.com
     );
 }
 
+.diamondGradient {
+    background: linear-gradient(
+        to right,
+        #f1f7fb,
+        #d9ebf4,
+        #cbe3f0,
+        #b8d8e7,
+        #9ac5db,
+        #f1f7fb
+    );
+}
+
 .magic {
     animation: background-pan 3s linear infinite;
     font-style: normal;
@@ -279,7 +291,7 @@ p {
     transform: scale(400%) translateX(0);
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1100px) {
     :root {
         --navHeight: 200px;
         --navHeightUp: -200px;
