@@ -69,12 +69,13 @@
 #sponsorBox {
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
     padding-bottom: 30px;
 }
 
 #sponsorBox > div {
-    width: 15%;
+    width: 20%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -274,6 +275,7 @@
     text-align: right;
     z-index: 1;
 }
+
 .sectionImage {
     position: absolute;
     object-fit: cover;
@@ -351,23 +353,24 @@ button {
         width: 50%;
     }
 
-    .card:nth-child(1){
-        transition-delay: 0;
-    }
-    
-    .card:nth-child(2){
-        transition-delay: 300ms;
-    }
-    
-    .card:nth-child(3){
-        transition-delay: 0ms;
-    }
-    
-    .card:nth-child(4){
-        transition-delay: 300ms;
+    #ourRobot > h2 {
+        width: 20%;
+        font-size: 80px 
     }
 
     #ourRobot > p {
+        display: none;
+    }
+
+    button{
+        width: 180%;
+    }
+
+    #ourTeam h2 {
+        font-size: 80px;
+    }
+
+    #ourTeam p {
         display: none;
     }
 
