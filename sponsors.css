@@ -50,11 +50,22 @@
 .sponsorCard > a {
     width: 100%;
     height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .sponsorCard > a > img {
     width: 100%;
     border-radius: 30px;
+}
+
+#diamond .sponsorCard{
+    width: 25vw;
+    height: 18.75vw;
+}
+#gold .sponsorCard{
+    width: 20vw;
+    height: 15vw;
 }
 
 #silver .sponsorCard{
