@@ -98,6 +98,21 @@ https://www.schemecolor.com
     );
 }
 
+.goldGradient {
+    background: linear-gradient(
+        to right,
+        #B38728,
+        #BF953F,
+        #BB9b49,
+        #FCF6BA,
+        #BF953F,
+        #BB9b49,
+        #BF953F
+
+    )
+}
+
+
 .diamondGradient {
     background: linear-gradient(
         to right,
