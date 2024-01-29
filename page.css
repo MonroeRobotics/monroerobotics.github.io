@@ -112,6 +112,21 @@ https://www.schemecolor.com
     )
 }
 
+.emeraldGradient {
+    background: linear-gradient(
+        to right,
+        #164f24,
+        #1e7b35,
+        #148c2a,
+        #3fb04d,
+        #3ec54e,
+        #3fb04d,
+        #148c2a,
+        #1e7b35,
+        #164f24
+    )
+}
+
 
 .diamondGradient {
     background: linear-gradient(
