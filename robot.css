@@ -2,7 +2,7 @@ section {
     overflow: hidden;
 }
 
-#currentRobot {
+.robotSection {
     background-color: rgba(3, 3, 3, 0.6);
     margin: 2%;
     padding: 5%;
@@ -45,11 +45,29 @@ section {
 }
 
 .linkCard {
-    width: 500px;
-    height: 500px;
+    max-width: 500px;
+    max-height: 500px;
+    width: 35vw;
+    height: 35vw;
 }
 
 .robotIntro > img {
     width: 80%;
 
 }
+
+@media screen and (max-width: 600px) {
+    .robotContent{
+        
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+    
+    }
+
+    .linkCard {
+        max-width: 500px;
+        max-height: 500px;
+        width: 50vw;
+        height: 50vw;
+    }
+} 
