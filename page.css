@@ -115,15 +115,13 @@ https://www.schemecolor.com
 .emeraldGradient {
     background: linear-gradient(
         to right,
-        #164f24,
+        #165c27,
         #1e7b35,
         #148c2a,
         #3fb04d,
-        #3ec54e,
-        #3fb04d,
         #148c2a,
         #1e7b35,
-        #164f24
+        #165c27
     )
 }
 
@@ -240,7 +238,7 @@ p {
     align-items: center;
     background: #1f4037;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #99f2c8, #1f4037);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #99f2c8, #1f4037); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #1e4e21, #319938); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 
