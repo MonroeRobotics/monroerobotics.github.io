@@ -115,15 +115,13 @@ https://www.schemecolor.com
 .emeraldGradient {
     background: linear-gradient(
         to right,
-        #164f24,
+        #165c27,
         #1e7b35,
         #148c2a,
         #3fb04d,
-        #3ec54e,
-        #3fb04d,
         #148c2a,
         #1e7b35,
-        #164f24
+        #165c27
     )
 }
 
@@ -240,7 +238,7 @@ p {
     align-items: center;
     background: #1f4037;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #99f2c8, #1f4037);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #99f2c8, #1f4037); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #1e4e21, #319938); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 
@@ -253,6 +251,7 @@ p {
     position: relative;
     justify-content: center;
     align-items: center;
+    text-align: center;
     width: 80%;
     height: 80%;
     background-color: rgba(0, 0, 0 ,0.6);
@@ -321,6 +320,12 @@ p {
     transform: scale(400%) translateX(0);
 }
 
+#footer {
+    width: 100vw;
+    height: 20vh;
+    background-color: #40444b;
+}
+
 @media screen and (max-width: 1100px) {
     :root {
         --navHeight: 200px;
@@ -330,6 +335,28 @@ p {
     nav {
         flex-direction: column;
         justify-content: center;
+    }
+
+
+
+    .pageHeader > div {
+        font-family: 'Josefin Sans', sans-serif;
+        font-style: italic;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 80%;
+        height: 80%;
+        background-color: rgba(0, 0, 0 ,0.6);
+    }
+
+    .pageHeader > div > h1 {
+        font-size: max(10px,10vh);
+        margin: 0;
     }
     
     #brandNav {
