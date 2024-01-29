@@ -8,10 +8,15 @@ window.addEventListener('mousemove', (event) => {
 window.onscroll = function() {checkForNav()};
 
 function checkForNav() {
+  let width = window.innerWidth
+  console.log(width)
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     document.getElementById("nav").style.top = "0";
   } 
-  else if (mousePos.y <= 60){
+  else if (mousePos.y <= 100){
+    document.getElementById("nav").style.top = "0";
+  }
+  else if(width <= 1100 && mousePos.y <= 200) {
     document.getElementById("nav").style.top = "0";
   }
   else {
