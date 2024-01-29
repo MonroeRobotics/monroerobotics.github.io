@@ -251,6 +251,7 @@ p {
     position: relative;
     justify-content: center;
     align-items: center;
+    text-align: center;
     width: 80%;
     height: 80%;
     background-color: rgba(0, 0, 0 ,0.6);
@@ -319,6 +320,12 @@ p {
     transform: scale(400%) translateX(0);
 }
 
+#footer {
+    width: 100vw;
+    height: 20vh;
+    background-color: #40444b;
+}
+
 @media screen and (max-width: 1100px) {
     :root {
         --navHeight: 200px;
@@ -328,6 +335,28 @@ p {
     nav {
         flex-direction: column;
         justify-content: center;
+    }
+
+
+
+    .pageHeader > div {
+        font-family: 'Josefin Sans', sans-serif;
+        font-style: italic;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 80%;
+        height: 80%;
+        background-color: rgba(0, 0, 0 ,0.6);
+    }
+
+    .pageHeader > div > h1 {
+        font-size: max(10px,10vh);
+        margin: 0;
     }
     
     #brandNav {
