@@ -320,7 +320,6 @@ p {
     transform: scale(400%) translateX(0);
 }
 
-
 #footer {
     width: 100vw;
     height: 20vh;
@@ -340,8 +339,7 @@ p {
 
     .sectionHeader {
         font-size: min(50px, 20vw);
-    }
-
+  }
 
 
     .pageHeader > div {
