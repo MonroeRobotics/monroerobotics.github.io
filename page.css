@@ -337,6 +337,9 @@ p {
         justify-content: center;
     }
 
+    .sectionHeader {
+        font-size: min(50px, 20vw);
+  }
 
 
     .pageHeader > div {
@@ -355,7 +358,7 @@ p {
     }
 
     .pageHeader > div > h1 {
-        font-size: max(10px,10vh);
+        font-size: min(100px,15vw);
         margin: 0;
     }
     
