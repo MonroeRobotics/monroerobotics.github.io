@@ -12,7 +12,7 @@
 }
 
 #sponsorIntro p {
-    font-size: 40px;
+    font-size: min(5vw, 40px);
     text-align: center;
 }
 
@@ -30,6 +30,8 @@
     align-items: center;
     justify-content: center;
 }
+
+
 
 .sponsorCard{
     width: 200px;
@@ -91,18 +93,33 @@
 
 #personalSponsors > div > p {
     font-size: 30px;
+    text-align: center;
 }
 
 #howToSponsor {
     margin-top: 5%;
-    display: grid;
+    display: flex;
     padding: 2%;
     background-color: rgb(47, 45, 45);
-    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#howToSponsor h2{
+    padding: 2%;
+    
 }
 
 #howToSponsor > div {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media screen and (max-width: 1100px) {
+    .sectionHeader {
+        font-size: min(50px, 5vw);
+    }
 }

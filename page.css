@@ -320,6 +320,7 @@ p {
     transform: scale(400%) translateX(0);
 }
 
+
 #footer {
     width: 100vw;
     height: 20vh;
@@ -335,6 +336,10 @@ p {
     nav {
         flex-direction: column;
         justify-content: center;
+    }
+
+    .sectionHeader {
+        font-size: min(50px, 20vw);
     }
 
 
@@ -355,7 +360,7 @@ p {
     }
 
     .pageHeader > div > h1 {
-        font-size: max(10px,10vh);
+        font-size: min(100px,15vw);
         margin: 0;
     }
     
