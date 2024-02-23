@@ -342,6 +342,7 @@ p {
   }
 
 
+
     .pageHeader > div {
         font-family: 'Josefin Sans', sans-serif;
         font-style: italic;
@@ -360,6 +361,13 @@ p {
     .pageHeader > div > h1 {
         font-size: min(100px,15vw);
         margin: 0;
+    }
+
+    .centerText {
+        width: 60%;
+        display: flex;
+        overflow: hidden;
+        position: middle;
     }
     
     #brandNav {
@@ -413,4 +421,11 @@ p {
         transition: background-color 0.3s;
         cursor: pointer;
     }
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
   }
